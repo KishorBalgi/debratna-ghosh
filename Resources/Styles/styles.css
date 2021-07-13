@@ -152,7 +152,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/Resources/Images/main_background.jpg");
+    url("Resources/Images/main_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -173,23 +173,7 @@ header {
   left: 5%;
 }
 /* SECTIONS */
-#about {
-  width: 100vw;
-  background-image: linear-gradient(
-      rgba(100, 100, 100, 0.7),
-      rgba(100, 100, 100, 0.7)
-    ),
-    url("https://images.unsplash.com/photo-1464855499786-2839659d9e5d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHBob3RvZ3JhcGh5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
-#about p {
-  font-size: 1.5rem;
-  text-shadow: #000;
-}
+
 /* OUR CLICKS */
 .card {
   background-position: center;
