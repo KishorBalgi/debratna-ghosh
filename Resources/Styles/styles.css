@@ -3,7 +3,8 @@
   --color-primary: #000;
   --color-primary-dark: rgb(44, 44, 44);
   --color-primary-font: #fff;
-  --color-theme: #ee3ec9;
+  --color-whatsapp: rgb(7, 94, 84);
+  --color-whatsapp-light: rgb(16, 163, 146);
 }
 * {
   margin: 0;
@@ -26,7 +27,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-primary-font);
 }
 button {
   border: none;
@@ -134,11 +135,11 @@ nav ul li a:active {
 }
 .logo-link {
   font-size: 150%;
-  color: var(--color-primary);
+  color: var(--color-primary-font);
 }
 
 /* HEADER CONTENT */
-header {
+#home {
   min-height: 100vh;
   max-height: fit-content;
   display: -webkit-box;
@@ -152,7 +153,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("Resources/Images/main_background.jpg");
+    url("../Images/main_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
