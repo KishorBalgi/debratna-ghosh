@@ -12,8 +12,13 @@ let mobActive = 0;
 navLinks.addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("nav-link")) {
+    console.log(e.target);
     const id = e.target.getAttribute("href");
-    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    if (id[0] === "#") {
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    } else {
+      open(id);
+    }
     if (mobActive) navMob.click();
   }
 });
