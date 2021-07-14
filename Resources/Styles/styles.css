@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   height: 100vh;
-  background-color: rgb(44, 44, 44);
+  background-color: rgb(15, 22, 36);
   overflow-x: hidden;
   z-index: 25;
 }
@@ -202,7 +202,56 @@ nav ul li a:active {
 }
 .about-container p {
   width: 50%;
+  text-align: justify;
   font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+/* Work */
+.work-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  margin: 20px 5px;
+}
+.img-box a {
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding-left: 10px;
+}
+.insta-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.profile {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+.image {
+  width: 275px;
+  height: auto;
+  border-radius: 10px;
+}
+.insta-lc {
+  display: flex;
+}
+.insta-lc li {
+  display: inline-block;
+  padding: 5px 0;
+}
+.insta-lc i {
   font-size: 20px;
 }
 /* OUR CLICKS */
