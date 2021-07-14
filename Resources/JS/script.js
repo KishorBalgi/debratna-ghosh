@@ -2,11 +2,13 @@
 // SELECTORS:
 const header = document.querySelector("header");
 const nav = document.querySelector("nav");
-const logo = document.querySelector(".logo-link");
+const logoLink = document.querySelector(".logo-link");
+const logo = document.querySelector(".logo");
 const navLinks = document.querySelector(".nav-links");
 const navMob = document.querySelector(".nav-mobile");
 const navMobIcon = document.querySelector(".nav-mobile img");
 const sections = document.querySelectorAll("section");
+const about = document.querySelector(".about-btn");
 let mobActive = 0;
 // SCROLL INTO VIEW:
 navLinks.addEventListener("click", function (e) {
@@ -22,9 +24,14 @@ navLinks.addEventListener("click", function (e) {
     if (mobActive) navMob.click();
   }
 });
-logo.addEventListener("click", function (e) {
+logoLink.addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector("#home").scrollIntoView({ behavior: "smooth" });
+});
+about.addEventListener("click", function (e) {
+  e.preventDefault;
+  console.log(e.target);
+  document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
 });
 // STICKY NAV:
 const navHeight = nav.getBoundingClientRect().height;
@@ -32,8 +39,10 @@ const sticky = function (entry) {
   const [entries] = entry;
   if (!entries.isIntersecting) {
     nav.classList.add("sticky");
+    logo.setAttribute("src", "Resources/Images/Logo-White.png");
   } else {
     nav.classList.remove("sticky");
+    logo.setAttribute("src", "Resources/Images/Logo.png");
   }
 };
 const observerHeader = new IntersectionObserver(sticky, {
@@ -58,7 +67,7 @@ const ObserverSection = new IntersectionObserver(sectionScroll, {
 sections.forEach((section) => ObserverSection.observe(section));
 // MOBILE NAV:
 navMob.addEventListener("click", function () {
-  logo.classList.toggle("hidden");
+  logoLink.classList.toggle("hidden");
   nav.classList.toggle("flex-column");
   navLinks.classList.toggle("flex-column");
   if (navMobIcon.getAttribute("src") === "Vendors/Icons/008-nav-icon.png") {
