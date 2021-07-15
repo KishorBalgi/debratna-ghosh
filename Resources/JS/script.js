@@ -47,13 +47,12 @@ const sticky = function (entry) {
 };
 const observerHeader = new IntersectionObserver(sticky, {
   root: null,
-  rootMargin: `-${navHeight}px`,
   threshold: 0,
+  rootMargin: `-${navHeight}px`,
 });
 
 observerHeader.observe(header);
 // SECTION SCROLL ANIMATION:
-sections.forEach((section) => section.classList.add("section-hidden"));
 const sectionScroll = function (entry, observer) {
   const [entries] = entry;
   if (!entries.isIntersecting) return;
@@ -62,23 +61,11 @@ const sectionScroll = function (entry, observer) {
 };
 const ObserverSection = new IntersectionObserver(sectionScroll, {
   root: null,
-  threshold: 0.03,
+  threshold: 0.05,
 });
-sections.forEach((section) => ObserverSection.observe(section));
+sections.forEach((section) => {
+  ObserverSection.observe(section);
+  section.classList.add("section-hidden");
+});
 // MOBILE NAV:
-navMob.addEventListener("click", function () {
-  logoLink.classList.toggle("hidden");
-  nav.classList.toggle("flex-column");
-  navLinks.classList.toggle("flex-column");
-  if (navMobIcon.getAttribute("src") === "Vendors/Icons/008-nav-icon.png") {
-    navMobIcon.setAttribute("src", "Vendors/Icons/009-nav-close.png");
-    navLinks.style.display = "flex";
-    nav.style.height = "fit-content";
-    mobActive = 1;
-  } else {
-    navMobIcon.setAttribute("src", "Vendors/Icons/008-nav-icon.png");
-    navLinks.style.display = "none";
-    nav.style.height = "55px";
-    mobActive = 0;
-  }
-});
+navMob.addEventListener("click", function () {});

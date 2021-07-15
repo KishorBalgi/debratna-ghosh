@@ -68,3 +68,23 @@
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 445px) {
+  .service div {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 290px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-height: 660px) {
+  .social-links-header {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-height: 400px) {
+  #home {
+    min-height: 160vh;
+  }
+}
