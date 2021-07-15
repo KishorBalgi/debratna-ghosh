@@ -41,23 +41,10 @@
     padding: 4rem 0;
   }
 }
-@media only screen and (max-width: 660px) {
-  nav {
-    position: fixed;
-    padding: 0 2rem;
-  }
-  .nav-links {
+@media only screen and (max-width: 1150px) {
+  .nav {
     display: none;
     padding: 2rem 0;
-  }
-  .nav-links li {
-    margin-right: 0;
-    padding-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-  nav ul li:hover,
-  nav ul li:active {
-    border-bottom: 0px;
   }
   .nav-mobile {
     display: contents;

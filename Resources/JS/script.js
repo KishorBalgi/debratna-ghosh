@@ -6,15 +6,17 @@ const logoLink = document.querySelector(".logo-link");
 const logo = document.querySelector(".logo");
 const navLinks = document.querySelector(".nav-links");
 const navMob = document.querySelector(".nav-mobile");
-const navMobIcon = document.querySelector(".nav-mobile img");
 const sections = document.querySelectorAll("section");
 const about = document.querySelector(".about-btn");
+const mobLink = document.querySelectorAll(".nav-mobile-link");
+const modalNav = document.querySelector(".nav-mobile-modal");
+const overlay = document.querySelector(".overlay");
+
 let mobActive = 0;
 // SCROLL INTO VIEW:
 navLinks.addEventListener("click", function (e) {
   e.preventDefault();
   if (e.target.classList.contains("nav-link")) {
-    console.log(e.target);
     const id = e.target.getAttribute("href");
     if (id[0] === "#") {
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
@@ -68,4 +70,18 @@ sections.forEach((section) => {
   section.classList.add("section-hidden");
 });
 // MOBILE NAV:
-navMob.addEventListener("click", function () {});
+navMob.addEventListener("click", function () {
+  modalNav.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+mobLink.forEach((link) => {
+  link.addEventListener("click", function () {
+    modalNav.classList.add("hidden");
+    overlay.classList.add("hidden");
+  });
+});
+
+overlay.addEventListener("click", function () {
+  modalNav.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
