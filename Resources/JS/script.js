@@ -11,8 +11,8 @@ const about = document.querySelector(".about-btn");
 const mobLink = document.querySelectorAll(".nav-mobile-link");
 const modalNav = document.querySelector(".nav-mobile-modal");
 const overlay = document.querySelector(".overlay");
+const emailbtn = document.querySelector(".email-btn");
 
-let mobActive = 0;
 // SCROLL INTO VIEW:
 navLinks.addEventListener("click", function (e) {
   e.preventDefault();
@@ -85,3 +85,8 @@ overlay.addEventListener("click", function () {
   modalNav.classList.add("hidden");
   overlay.classList.add("hidden");
 });
+// Copy to CLip Board
+function copy() {
+  alert("E-Mail: debcorps17@gmail.com");
+}
+emailbtn.addEventListener("click", copy);

@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="Vendors/Styles/normalize.css" />
     <link rel="stylesheet" href="Resources/Styles/styles.css" />
     <link rel="stylesheet" href="Resources/Styles/queries.css" />
@@ -39,8 +43,8 @@
         </button>
         <ul class="nav-links nav">
           <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#work">Work</a></li>
-          <li><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link" href="achievements.html">Achievements</a></li>
           <li>
             <a class="nav-link" href="projects.html" target="_blank"
               >Projects</a
@@ -52,8 +56,11 @@
         </ul>
       </nav>
       <div class="headings">
-        <h1>DEBRATNA GHOSH.</h1>
-        <h4>I am a photographer from Kolkata, INDIA.</h4>
+        <h1>DEBRATNA GHOSH</h1>
+        <h4>
+          I am a freelance photographer from Kolkata, India.<br />Framing
+          moments into memories.
+        </h4>
         <div class="social-links social-links-header">
           <ul>
             <li>
@@ -67,9 +74,15 @@
               /></a>
             </li>
             <li>
-              <a href="#" target="_blank"
-                ><img src="Vendors/Icons/005-gmail.png" alt="G-Mail"
-              /></a>
+              <input
+                class="hidden"
+                id="email"
+                type="text"
+                value="debcorps17@gmail.com"
+              />
+              <button class="email-btn">
+                <img src="Vendors/Icons/005-gmail.png" alt="G-Mail" />
+              </button>
             </li>
           </ul>
           <button class="about-btn">About me &darr;</button>
@@ -106,8 +119,8 @@
       </div>
     </section> -->
 
-    <section id="work">
-      <h2>Work</h2>
+    <section id="gallery">
+      <h2>My Gallery</h2>
       <div class="work-container">
         <!-- 1 -->
         <div class="column">
@@ -601,7 +614,7 @@
       <div class="service">
         <div>
           <i class="fas fa-campground"></i>
-          <p>Event Coverage</p>
+          <p>Event Coverages</p>
         </div>
         <div>
           <i class="fas fa-cubes"></i>
@@ -658,10 +671,11 @@
         </p>
       </div>
     </footer>
+
     <div class="nav-mobile-modal hidden">
       <ul class="nav-links nav-mobile-links">
         <li><a class="nav-link nav-mobile-link" href="#home">Home</a></li>
-        <li><a class="nav-link nav-mobile-link" href="#work">Work</a></li>
+        <li><a class="nav-link nav-mobile-link" href="#gallery">Gallery</a></li>
         <li>
           <a class="nav-link nav-mobile-link" href="#achievements"
             >Achievements</a

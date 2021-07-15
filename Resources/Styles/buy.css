@@ -6,6 +6,13 @@ header {
   min-height: 100vh;
   max-height: fit-content;
 }
+nav li {
+  display: inline-block;
+}
+nav li a {
+  font-weight: bold;
+  font-size: 20px;
+}
 .buy-container {
   display: flex;
   flex-direction: column;
@@ -77,3 +84,4 @@ header {
     justify-content: center;
   }
 }
+/* Achievements */
