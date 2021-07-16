@@ -75,7 +75,7 @@ nav li a {
 .image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 5rem;
+  padding: 5rem 0;
   place-items: center;
 }
 .image-box {
