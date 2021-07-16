@@ -154,6 +154,7 @@ nav {
   width: 80%;
   height: auto;
   background-color: rgb(233, 233, 233);
+  transition: all 1s ease;
 }
 .overlay {
   position: fixed;
@@ -165,6 +166,7 @@ nav {
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   z-index: 5;
+  transition: all 1s ease;
 }
 .nav-mobile-links {
   display: flex;
