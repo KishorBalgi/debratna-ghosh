@@ -78,7 +78,7 @@ nav li a {
   display: grid;
   padding: 5px 10px;
   width: 220px;
-  margin: 0 auto;
+  margin: 10px auto;
   transition: all 1s ease;
 }
 .buy-insta:hover {
