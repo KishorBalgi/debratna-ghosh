@@ -174,8 +174,11 @@ nav {
 }
 .nav-mobile-links li {
   margin: 0;
+  padding: 10px 0;
 }
-
+.nav-mobile-links a {
+  font-family: sans-serif;
+}
 /* HEADER CONTENT */
 #home {
   min-height: 100vh;
