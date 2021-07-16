@@ -54,7 +54,7 @@ nav li a {
   height: 40px;
 }
 .buy-image {
-  width: 50vw;
+  width: 20vw;
   height: auto;
   margin: 30px 0;
   border-radius: 10px;
@@ -71,6 +71,40 @@ nav li a {
 }
 .buy-mail-container p {
   padding: 0 10px;
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 5rem;
+  place-items: center;
+}
+.image-box {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  margin: 20px 5px;
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.grid-image {
+  border-radius: 10px;
+}
+.buy-btn {
+  width: 50%;
+  align-self: center;
+  padding: 5px 10px;
+  background-color: black;
+  color: var(--color-primary-font);
+  font-weight: 600;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.buy-btn:hover {
+  color: green;
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 540px) {
   .buy-buttons {
