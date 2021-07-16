@@ -72,6 +72,27 @@ nav li a {
 .buy-mail-container p {
   padding: 0 10px;
 }
+.buy-insta {
+  border-radius: 50px;
+  border: 2px solid #fff;
+  display: grid;
+  padding: 5px 10px;
+  width: 220px;
+  margin: 0 auto;
+  transition: all 1s ease;
+}
+.buy-insta:hover {
+  transform: scale(1.05);
+}
+.buy-insta a {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.buy-insta img {
+  width: 40px;
+  padding-right: 10px;
+}
 .image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
