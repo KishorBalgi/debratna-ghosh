@@ -26,8 +26,8 @@ nav li a {
 }
 .buy-whatsapp {
   background-color: var(--color-whatsapp);
-  width: 190px;
-  padding: 10px 20px;
+  width: 220px;
+  padding: 5px 20px;
   border-radius: 30px;
   color: var(--color-primary-font);
   font-size: 20px;
@@ -36,7 +36,7 @@ nav li a {
   align-items: center;
   justify-content: space-between;
   transition: all 1s ease;
-  border: 4px solid #fff;
+  border: 2px solid #fff;
   margin: 20px auto;
 }
 .buy-whatsapp:hover {
@@ -75,7 +75,7 @@ nav li a {
 .image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   place-items: center;
 }
 .image-box {
