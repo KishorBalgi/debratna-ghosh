@@ -12,6 +12,11 @@
     color: #fff;
   }
 }
+@media only screen and (max-width: 1015px) {
+  h4 {
+    font-size: 1.7rem;
+  }
+}
 @media only screen and (max-width: 1100px) {
   .about-container {
     flex-direction: column;
