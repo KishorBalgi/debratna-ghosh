@@ -4,7 +4,7 @@ const header = document.querySelector("header");
 const nav = document.querySelector("nav");
 const logoLink = document.querySelector(".logo-link");
 const logo = document.querySelector(".logo");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.querySelectorAll(".nav-links");
 const navMob = document.querySelector(".nav-mobile");
 const sections = document.querySelectorAll("section");
 const about = document.querySelector(".about-btn");
@@ -14,25 +14,25 @@ const overlay = document.querySelector(".overlay");
 const emailbtn = document.querySelector(".email-btn");
 
 // SCROLL INTO VIEW:
-navLinks.addEventListener("click", function (e) {
-  e.preventDefault();
-  if (e.target.classList.contains("nav-link")) {
-    const id = e.target.getAttribute("href");
-    if (id[0] === "#") {
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
-    } else {
-      open(id);
+navLinks.forEach((nav) =>
+  nav.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (e.target.classList.contains("nav-link")) {
+      const id = e.target.getAttribute("href");
+      if (id[0] === "#") {
+        document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+      } else {
+        open(id);
+      }
     }
-    if (mobActive) navMob.click();
-  }
-});
+  })
+);
 logoLink.addEventListener("click", function (e) {
   e.preventDefault();
   document.querySelector("#home").scrollIntoView({ behavior: "smooth" });
 });
 about.addEventListener("click", function (e) {
   e.preventDefault;
-  console.log(e.target);
   document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
 });
 // STICKY NAV:
