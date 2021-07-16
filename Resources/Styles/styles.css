@@ -58,7 +58,6 @@ h4 {
   font-family: monospace, sans-serif;
   text-align: left;
 }
-
 section {
   padding: 5rem 3rem;
   border-bottom: 0.5px solid var(--color-primary-font);
@@ -96,10 +95,6 @@ nav {
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
   z-index: 4;
 }
-.flex-column {
-  flex-direction: column;
-  padding-top: 1.5rem;
-}
 .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +123,7 @@ nav {
 }
 .nav-mobile i {
   font-size: 20px;
+  color: #fff;
 }
 .logo-link img {
   width: 160px;
@@ -321,29 +317,6 @@ nav {
 .service p {
   text-align: center;
 }
-/* OUR CLICKS */
-.card {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  transition: all 0.5s;
-}
-.card:hover {
-  transform: scale(1.03);
-}
-@media only screen and (min-width: 1500px) {
-  .card-wide {
-    grid-column: span 2 / auto;
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 500px;
-}
 
 /* FOOTER */
 footer {
@@ -428,7 +401,7 @@ footer {
   -webkit-transform: translateY(5rem);
   transform: translateY(3rem);
 }
-/* HIDDEN CLASSES */
+/* HIDDEN CLASS*/
 .hidden {
   display: none;
 }

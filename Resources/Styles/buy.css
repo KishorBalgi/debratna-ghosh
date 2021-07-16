@@ -76,12 +76,18 @@ nav li a {
   .buy-buttons {
     flex-direction: column;
   }
-  .sticky ul {
-    display: none;
+  .h5 {
+    font-size: 15px;
   }
-  .mob-logo {
-    display: flex;
-    justify-content: center;
+  .buy-image {
+    width: 80vw;
+    height: auto;
+  }
+  .buy-mail-container {
+    flex-direction: column;
+  }
+  nav {
+    padding: 0 10px;
   }
 }
 /* Achievements */
