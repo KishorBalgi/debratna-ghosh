@@ -160,7 +160,6 @@ nav li a {
 }
 .slider div {
   display: flex;
-  /* width: 100%; */
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
