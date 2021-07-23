@@ -163,6 +163,7 @@ nav li a {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
+  height: 550px;
 }
 .slide {
   width: 400px;
@@ -182,6 +183,9 @@ nav li a {
   .slide {
     width: 300px;
   }
+  .slider div {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .slider {
@@ -189,6 +193,9 @@ nav li a {
   }
   .slide {
     width: 250px;
+  }
+  .slider div {
+    height: 332px;
   }
   .btn-slider {
     padding: 3px 10px;
@@ -199,9 +206,15 @@ nav li a {
   .slide {
     width: 200px;
   }
+  .slider div {
+    height: 265px;
+  }
 }
 @media only screen and (max-width: 315px) {
   .slide {
     width: 150px;
+  }
+  .slider div {
+    height: 200px;
   }
 }
