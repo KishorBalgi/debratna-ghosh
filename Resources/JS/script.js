@@ -85,8 +85,3 @@ overlay.addEventListener("click", function () {
   modalNav.classList.add("hidden");
   overlay.classList.add("hidden");
 });
-// Copy to CLip Board
-function copy() {
-  alert("E-Mail: debcorps17@gmail.com");
-}
-emailbtn.addEventListener("click", copy);
