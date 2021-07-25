@@ -16,7 +16,7 @@ html {
   font-size: 100%;
 }
 body {
-  font-family: "Archivo Black", sans-serif;
+  font-family: sans-serif;
   color: var(--color-primary-font);
   font-weight: 400;
   line-height: 1.6;
