@@ -48,6 +48,7 @@ h2 {
   font-family: "Sacramento", cursive;
   display: grid;
   place-items: center;
+  padding: 60px 0 0 20px;
 }
 h3 {
   font-size: 1.5rem;
